@@ -17,16 +17,39 @@ export default ({ children }) => {
   )
   return (
     <div className="site-wrapper">
-      <header className="site-header">
-        <div className="site-title">
-          <Link to="/">{data.site.siteMetadata.title}</Link>
-        </div>
-        <Navigation />
-      </header>
       {children}
-      <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} Delog &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://w3layouts.com">W3Layouts</a></p>
-      </footer>
+        <div className="footer-main">
+            <div className="footer-social">
+                <h4>follow me</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span className="fa fa-facebook icon_facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span className="fa fa-twitter icon_twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span className="fa fa-dribbble icon_dribbble"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span className="fa fa-google-plus icon_g_plus"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div className="cpy-right">
+                <p>© {new Date().getFullYear()} Jworks. All rights reserved | Design by
+                    <a href="http://w3layouts.com"> W3layouts.</a>
+                </p>
+            </div>
+        </div>
     </div>
   )
 }

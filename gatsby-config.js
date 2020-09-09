@@ -37,7 +37,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it. replace with yours
-        trackingId: "UA-164743872-1",
+        trackingId: "UA-164743872-1-dev",
         head: true,
       }
     },
@@ -51,6 +51,21 @@ module.exports = {
         theme_color: `#381696`,
         display: `standalone`,
         icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Barlow+Condensed`,
+            variants: [`100`,`200`,`200i`,`300`,`300i`,`400`,`400i`,`500`,`500i`,`600`,`600i`,`700`,`700i`,`800`,`800i`,`900`,`900i`],
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
+        ],
       },
     },
     `gatsby-plugin-sass`, 
