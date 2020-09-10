@@ -110,7 +110,7 @@ const IndexPage = ({
                             <a href="#contact" className="wthree- about-link scroll">hire me</a>
                         </li>
                         <li>
-                            <a href="files/jitheeshvo.pdf" className="wthree- about-link">download cv</a>
+                            <a href={'files/jitheeshvo.pdf'}  target="_blank" className="wthree- about-link">download cv</a>
                         </li>
                     </ul>
                 </div>
@@ -230,7 +230,7 @@ const IndexPage = ({
             <h4 className="sec-title">nice to meet you!</h4>
             <div className="contact-right-w3l">
                 <h3 className="title-contact text-center">Have a question or just want to Get in Touch?</h3>
-                <form action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+                <form action="https://sendmail.w3layouts.com/SubmitContactForm" method="post" target="_blank">
                     <div className="contact-input">
                         <input type="text" className="name" name="w3lName" placeholder="Name" required=""/>
                     </div>
