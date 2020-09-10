@@ -25,7 +25,7 @@ const IndexPage = ({
                         </div>
                         <div className="col-md-4 col-sm-4 logo">
                             <h1 className="main-title">
-                                <a href="index.html">Jworks</a>
+                                <a href="index.html">J-works</a>
 
                             </h1>
                         </div>
@@ -39,7 +39,7 @@ const IndexPage = ({
                         <h4>welcome to my site!</h4>
                         <h3>i'm Jitheesh</h3>
                         <div className="banner-slide">
-                            <h2 className="bnrtext">I'm a</h2>
+                            <h2 className="bnrtext">I'm a </h2>
                             <b>
 							<span className="span1">
                                 <br/>
@@ -110,7 +110,7 @@ const IndexPage = ({
                             <a href="#contact" className="wthree- about-link scroll">hire me</a>
                         </li>
                         <li>
-                            <a href={'files/jitheeshvo.pdf'}  target="_blank" className="wthree- about-link">download cv</a>
+                            <a href={'files/jitheeshvo.pdf'} rel="noopener noreferrer"   target="_blank" className="wthree- about-link">download cv</a>
                         </li>
                     </ul>
                 </div>
@@ -230,7 +230,7 @@ const IndexPage = ({
             <h4 className="sec-title">nice to meet you!</h4>
             <div className="contact-right-w3l">
                 <h3 className="title-contact text-center">Have a question or just want to Get in Touch?</h3>
-                <form action="https://sendmail.w3layouts.com/SubmitContactForm" method="post" target="_blank">
+                <form action="https://sendmail.w3layouts.com/SubmitContactForm" method="post" target="_blank" rel="noopener noreferrer" >
                     <div className="contact-input">
                         <input type="text" className="name" name="w3lName" placeholder="Name" required=""/>
                     </div>

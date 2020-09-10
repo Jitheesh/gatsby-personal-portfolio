@@ -807,6 +807,23 @@ span.span1 {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: 1s;
 }
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
 .section-w3layouts {
   padding: 4em 0;
 }
