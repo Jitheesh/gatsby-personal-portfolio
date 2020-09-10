@@ -2387,6 +2387,13 @@ span.icon_g_plus {
   h1.main-title {
     margin: 0.3em 0;
   }
+  .contact-bottom {
+    background-position: inherit;
+    h3.pos-title{
+      top: 13%;
+      left: -15%;
+    }
+  }
 }
 @media screen and (max-width: 736px) {
   .banner-slide {
@@ -2799,7 +2806,7 @@ span.icon_g_plus {
     }
   }
   span.span1 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .header-agileinfo {
     min-height: 506px;
@@ -2878,7 +2885,7 @@ span.icon_g_plus {
     font-size: 2.5em;
   }
   span.span1 {
-    font-size: 28px;
+    font-size: 20px;
     width: 162px;
   }
   .header-agileinfo {
@@ -3024,7 +3031,7 @@ span.icon_g_plus {
     font-size: 2.3em;
   }
   span.span1 {
-    font-size: 24px;
+    font-size: 18px;
     width: 140px;
   }
   .header-agileinfo {
@@ -9559,30 +9566,7 @@ select[multiple].input-group-sm {
       }
     }
   }
-  .navbar-toggle {
-    border-color: $border_color_24;
-    &:hover {
-      background-color: $background_color_35;
-    }
-    &:focus {
-      background-color: $background_color_35;
-    }
-    .icon-bar {
-      background-color: $background_color_36;
-    }
-  }
-  .navbar-collapse {
-    border-color: $border_color_23;
-  }
-  .navbar-form {
-    border-color: $border_color_23;
-  }
-  .navbar-link {
-    color: $color_6;
-    &:hover {
-      color: $color_3;
-    }
-  }
+
   .btn-link {
     color: $color_6;
     &:hover {

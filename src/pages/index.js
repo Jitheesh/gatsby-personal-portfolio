@@ -62,10 +62,6 @@ const IndexPage = ({
                 <div className="navbar-header">
                     <button type="button" className="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
                             data-target="#bs-megadropdown-tabs">Menu
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
                     </button>
                 </div>
 
