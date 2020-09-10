@@ -96,19 +96,21 @@ const IndexPage = ({
             <div className="container">
                 <h4 className="sec-title">profile</h4>
                 <div className="main-about-grid text-center">
-                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur sunt in culpa qui
-                        .Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        sunt in culpa qui officia
-                        deserunt mollit anim id est laboth. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu
-                        fugiat nulla pariatur sunt in culpa qui .</p>
+                    <p> I Started my journey in year 2011, gaining experience, learning new techniques from people willing to share their wisdom with me.
+                        My expertise lies in creating user friendly E-commerce websites, Extensions.
+
+                        I am committed to provide cutting-edge solutions to clients with user-centric approach while keeping
+                        the quality standards high..
+
+                        I turn ideas into wonderful website. If you want to break boundaries with your project, working with me is a good start!
+
+                    </p>
                     <ul className="about-list">
                         <li>
                             <a href="#contact" className="wthree- about-link scroll">hire me</a>
                         </li>
                         <li>
-                            <a href="#" className="wthree- about-link">download cv</a>
+                            <a href="files/jitheeshvo.pdf" className="wthree- about-link">download cv</a>
                         </li>
                     </ul>
                 </div>
@@ -117,32 +119,34 @@ const IndexPage = ({
                         <div className="ab1 main-about-grid1">
                             <span className="fa fa-graduation-cap  wthree-title-list" aria-hidden="true"></span>
                             <h4 className="aboutbtm-head">education</h4>
-                            <h5>Phd Computer Science</h5>
-                            <p>Ncididunt ut labore et t enim ad minim.</p>
-                            <h5>University</h5>
-                            <p>Ncididunt ut labore et t enim ad minim.</p>
+                            <h5>BACHELOR OF TECHNOLOGY</h5>
+                            <p>Cochin university of science and technology </p>
+                            <h5>HIGHER SECONDARY BOARD OF EDUCATION</h5>
+                            <p>Brahmanandodayam Higher secondary School</p>
                             <h5>High School</h5>
-                            <p>Ncididunt ut labore et t enim ad minim.</p>
+                            <p>St.Sebastian H.S</p>
                         </div>
                         <div className="ab1 main-about-grid2">
                             <span className="fa fa-shield  wthree-title-list" aria-hidden="true"></span>
                             <h4 className="aboutbtm-head">expertise</h4>
-                            <h5>Senior Interface Designer</h5>
-                            <p>20XX-20XX</p>
-                            <h5>Graphic Designer</h5>
-                            <p>20XX-20XX</p>
-                            <h5>Web Designer</h5>
-                            <p>20XX-20XX</p>
+                            <h5>TECHNICAL LEAD - Digital Boutique</h5>
+                            <p>2019-present</p>
+                            <h5>TEAM LEAD - Luminescent Digital</h5>
+                            <p>2017-2019</p>
+                            <h5>SENIOR SOFTWARE ENGINEER - Luminescent Digital</h5>
+                            <p>2013-2017</p>
+                            <h5>SOFTWARE ENGINEER - Luminescent Digital</h5>
+                            <p>2011-2013</p>
                         </div>
                         <div className="ab1 main-about-grid3">
                             <span className="fa fa-trophy" aria-hidden="true"></span>
                             <h4 className="aboutbtm-head">awards</h4>
-                            <h5>best website design</h5>
-                            <p>Ncididunt ut labore et t enim ad minim.</p>
-                            <h5>site of the day</h5>
-                            <p>Ncididunt ut labore et t enim ad minim.</p>
-                            <h5>premier UX award</h5>
-                            <p>Ncididunt ut labore et t enim ad minim.</p>
+                            <h5>Magento certification</h5>
+                            <p>M70-101</p>
+                            <h5>Magento community contributor</h5>
+                            <p>Helped Magento community to resolve both functionality and security issues</p>
+                            <h5>Best Employ of the year</h5>
+                            <p>After delivering multiple projects within deadlines</p>
                         </div>
                         <div className="clearfix"></div>
                     </div>
@@ -157,18 +161,34 @@ const IndexPage = ({
 
                 <div className="row">
                     <div className="skills-bar">
-                        <h3 className="progress-title">HTML5</h3>
+                        <h3 className="progress-title">Magento 2</h3>
                         <div className="progress  green">
-                            <div className="progress-bar"  style={{ backgroundColor: '#5fad56', width: '90%' }}>
-                                <div className="progress-value">90%</div>
+                            <div className="progress-bar"  style={{ backgroundColor: '#5fad56', width: '95%' }}>
+                                <div className="progress-value">95%</div>
                             </div>
                         </div>
-                        <h3 className="progress-title">PHOTOSHOP</h3>
-                        <div className="progress pink">
+                        <h3 className="progress-title">Magento 1</h3>
+                        <div className="progress green">
                             <div className="progress-bar"  style={{ backgroundColor: '#ff4b7d', width: '90%' }}>
                                 <div className="progress-value">90%</div>
                             </div>
                         </div>
+
+                        <h3 className="progress-title">PHP</h3>
+                        <div className="progress pink">
+                            <div className="progress-bar"  style={{ backgroundColor: '#de907c', width: '90%' }}>
+                                <div className="progress-value">90%</div>
+                            </div>
+                        </div>
+
+
+                        <h3 className="progress-title">MYSQL</h3>
+                        <div className="progress green">
+                            <div className="progress-bar"  style={{ backgroundColor: '#271eb1', width: '85%' }}>
+                                <div className="progress-value">85%</div>
+                            </div>
+                        </div>
+
                         <h3 className="progress-title">JAVASCRIPT</h3>
                         <div className="progress yellow">
                             <div className="progress-bar" style={{ backgroundColor: '#e8d324', width: '80%' }}>
@@ -177,9 +197,23 @@ const IndexPage = ({
                         </div>
 
                         <h3 className="progress-title">CSS3</h3>
-                        <div className="progress blue">
+                        <div className="progress green">
+                            <div className="progress-bar" style={{ backgroundColor: '#1f7a83', width: '75%' }}>
+                                <div className="progress-value">75%</div>
+                            </div>
+                        </div>
+
+                        <h3 className="progress-title">HTML5</h3>
+                        <div className="progress green">
                             <div className="progress-bar" style={{ backgroundColor: '#3485ef', width: '75%' }}>
                                 <div className="progress-value">75%</div>
+                            </div>
+                        </div>
+
+                        <h3 className="progress-title">Version Control/Git</h3>
+                        <div className="progress green">
+                            <div className="progress-bar" style={{ backgroundColor: '#4a9656', width: '85%' }}>
+                                <div className="progress-value">85%</div>
                             </div>
                         </div>
                     </div>
@@ -196,21 +230,18 @@ const IndexPage = ({
             <h4 className="sec-title">nice to meet you!</h4>
             <div className="contact-right-w3l">
                 <h3 className="title-contact text-center">Have a question or just want to Get in Touch?</h3>
-                <form action="#" method="post">
+                <form action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
                     <div className="contact-input">
-                        <input type="text" className="name" name="name" placeholder="First Name" required=""/>
+                        <input type="text" className="name" name="w3lName" placeholder="Name" required=""/>
                     </div>
                     <div className="contact-input">
-                        <input type="text" className="name" name="name" placeholder="Last Name" required=""/>
+                        <input type="email" className="name" name="w3lSender" placeholder="Email" required=""/>
                     </div>
                     <div className="contact-input">
-                        <input type="email" className="name" name="name" placeholder="Email" required=""/>
+                        <input type="text" className="name" name="w3lSubject" placeholder="Subject" required=""/>
                     </div>
                     <div className="contact-input">
-                        <input type="text" className="name" name="name" placeholder="Subject" required=""/>
-                    </div>
-                    <div className="contact-input">
-                        <textarea placeholder="Your Message" required=""></textarea>
+                        <textarea placeholder="Your Message" required="" name="w3lMessage"></textarea>
                     </div>
                     <input type="submit" value="SEND MESSAGE"/>
                 </form>

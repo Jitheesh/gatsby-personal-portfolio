@@ -23,23 +23,18 @@ export default ({ children }) => {
                 <h4>follow me</h4>
                 <ul>
                     <li>
-                        <a href="#">
-                            <span className="fa fa-facebook icon_facebook"></span>
+                        <a href="http://facebook.com/jitheesh.vo">
+                            <span className="fa fa-facebook "></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span className="fa fa-twitter icon_twitter"></span>
+                        <a href="https://github.com/Jitheesh/">
+                            <span className="fa fa-github"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <span className="fa fa-dribbble icon_dribbble"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span className="fa fa-google-plus icon_g_plus"></span>
+                        <a href="https://in.linkedin.com/in/jitheeshvo">
+                            <span className="fa fa-linkedin"></span>
                         </a>
                     </li>
                 </ul>
