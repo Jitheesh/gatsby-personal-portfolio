@@ -2,8 +2,12 @@
   "title": "J-works",
   "siteUrl": "https://jitheesh-portfolio.netlify.app/",
   "description": "Welcome to Jworks - The projects site of Jithessh V O, Senior PHP/Magento developer based in India. I specialize in Magento e-commerce web development and having 9+ years of experience",
+  "email": "jitheeshvo@gmail.com",
+  "phone": "+919895006626",
   "home": {
     "title": "I'm Jitheesh V O",
+    "welcome": "welcome to my site!",
+    "summary": "\n\n```\n<span className=\"span1\">\n                                <br/>\n\t\t\t\t\t\t\t\tMagento developer\n\t\t\t\t\t\t\t\t<br/> PHP developer\n\t\t\t\t\t\t\t\t<br/> web developer\n\t\t\t\t\t\t\t\t<br/>\n\t\t\t\t\t\t\t</span>\n```",
     "description": "I Started my journey in year 2011, gaining experience, learning new techniques from people willing to share their wisdom with me. My expertise lies in creating user friendly E-commerce websites, Extensions. I am committed to provide cutting-edge solutions to clients with user-centric approach while keeping the quality standards high.. I turn ideas into wonderful website. If you want to break boundaries with your project, working with me is a good start!"
   }
 }
