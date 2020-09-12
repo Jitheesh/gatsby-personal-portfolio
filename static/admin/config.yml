@@ -1,7 +1,7 @@
 backend:
   name: github
   # change repo to your git repository url
-  repo: W3Layouts/gatsby-starter-delog
+  repo: Jitheesh/gatsby-personal-portfolio
 
 media_folder: static/assets
 public_folder: /assets
@@ -27,6 +27,16 @@ collections:
             label: Description
             default: ''
             required: false
+          - widget: string
+            name: email
+            label: Email
+            default: ''
+            required: false
+          - widget: string
+            name: phone
+            label: Phone
+            default: ''
+            required: false
           - widget: object
             name: home
             label: Homepage Options
@@ -34,6 +44,16 @@ collections:
               - widget: string
                 name: title
                 label: Title
+                default: ''
+                required: false
+              - widget: string
+                name: welcome
+                label: Welcome Text
+                default: ''
+                required: false
+              - widget: markdown
+                name: summary
+                label: Summary
                 default: ''
                 required: false
               - widget: markdown
@@ -73,3 +93,37 @@ collections:
           config:
             multiple: false
       - { name: body, label: Body, widget: markdown }
+
+  - name: projects
+    label: Projects
+    folder: _data/projects
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+      - {
+        label: Template,
+        name: template,
+        widget: hidden,
+        default: ProjectPost,
+      }
+      - name: path
+        label: Path
+        widget: string
+        pattern: [/]
+        hint: "Path must start with /"
+      - { name: date, label: Date, widget: datetime }
+      - { name: name, label: Project name }
+      - { name: url, label: Project URL }
+      - label: Description
+        name: description
+        widget: text
+        required: false
+      - label: Featured Images
+        name: thumbnail
+        widget: image
+        hint: "Image size 1280x800 works best :)"
+        required: false
+        media_library:
+          config:
+            multiple: true
+

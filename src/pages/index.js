@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
+import HeroHeaderBanner from "../components/HeroHeaderBanner"
 
 const IndexPage = ({
   data: {
@@ -16,46 +17,7 @@ const IndexPage = ({
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
         <div className="header-agileinfo">
-            <div className="header-banner text-center">
-                <div className="container">
-                    <div className="header-bottom">
-                        <div className="col-md-4 col-sm-4 header-left">
-                            <span className="fa fa-envelope-o icon" aria-hidden="true"></span>
-                            <a href="mailto:jitheeshvo@gmail.com">jitheeshvo@gmail.com</a>
-                        </div>
-                        <div className="col-md-4 col-sm-4 logo">
-                            <h1 className="main-title">
-                                <a href="index.html">J-works</a>
-
-                            </h1>
-                        </div>
-                        <div className="col-md-4 col-sm-4 header-right">
-                            <span className="fa fa-phone icon" aria-hidden="true"></span>
-                            <p>+91 9895006626</p>
-                        </div>
-                        <div className="clearfix"></div>
-                    </div>
-                    <div className="banner-text">
-                        <h4>welcome to my site!</h4>
-                        <h3>i'm Jitheesh</h3>
-                        <div className="banner-slide">
-                            <h2 className="bnrtext">I'm a </h2>
-                            <b>
-							<span className="span1">
-                                <br/>
-								Magento developer
-								<br/> PHP developer
-								<br/> web developer
-								<br/>
-							</span>
-                            </b>
-
-                            <div className="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <HeroHeaderBanner/>
             <div className="clear"></div>
             <nav className="navbar navbar-default">
 
@@ -64,7 +26,6 @@ const IndexPage = ({
                             data-target="#bs-megadropdown-tabs">Menu
                     </button>
                 </div>
-
                 <div className="collapse navbar-collapse" id="bs-megadropdown-tabs">
                     <ul>
                         <li>
@@ -92,14 +53,8 @@ const IndexPage = ({
             <div className="container">
                 <h4 className="sec-title">profile</h4>
                 <div className="main-about-grid text-center">
-                    <p> I Started my journey in year 2011, gaining experience, learning new techniques from people willing to share their wisdom with me.
-                        My expertise lies in creating user friendly E-commerce websites, Extensions.
-
-                        I am committed to provide cutting-edge solutions to clients with user-centric approach while keeping
-                        the quality standards high..
-
-                        I turn ideas into wonderful website. If you want to break boundaries with your project, working with me is a good start!
-
+                    <p>
+                        {site.siteMetadata.home.description}
                     </p>
                     <ul className="about-list">
                         <li>
@@ -255,6 +210,10 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+          home {
+              title
+              description
+          }
       }
     }
   }
