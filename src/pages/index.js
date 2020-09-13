@@ -3,13 +3,18 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import HeroHeaderBanner from "../components/HeroHeaderBanner"
+import ProjectLink from "../components/project-link"
 
 const IndexPage = ({
   data: {
     site,
+    allMarkdownRemark: { edges },
   },
 }) => {
 
+    const Projects = edges
+            .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+            .map(edge => <ProjectLink key={edge.node.id} post={edge.node} />)
   return (
     <Layout>
       <Helmet>
@@ -174,8 +179,10 @@ const IndexPage = ({
 
         <div className="portfolio section-w3layouts main-pos" id="port">
             <h4 className="sec-title">recent works</h4>
+            <div className="filtr-container">
+                {Projects}
+            </div>
         </div>
-
         <div className="contact-bottom section-w3layouts main-pos" id="contact">
             <h3 className="pos-title">get in touch</h3>
             <h4 className="sec-title">nice to meet you!</h4>
@@ -206,15 +213,31 @@ const IndexPage = ({
 export default IndexPage
 export const pageQuery = graphql`
   query indexPageQuery {
-    site {
-      siteMetadata {
-        title
-        description
-          home {
+      site {
+          siteMetadata {
               title
               description
+              home {
+                  title
+                  description
+              }
           }
       }
-    }
+      allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { template: { eq: "ProjectPost" } } }
+      ) {
+          edges {
+              node {
+                  id
+                  excerpt(pruneLength: 250)
+                  frontmatter {
+                      date(formatString: "MMMM DD, YYYY")
+                      name
+                      thumbnail
+                  }
+              }
+          }
+      }
   }
 `

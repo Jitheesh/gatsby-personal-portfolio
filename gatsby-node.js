@@ -14,6 +14,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             id
+            template
             frontmatter {
               path
             }
@@ -32,7 +33,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
-      component: blogPostTemplate,
+      component:  path.resolve(
+          `src/templates/${String(node.frontmatter.template)}.js`
+      ),
       context: {}, // additional data can be passed via context
     })
   })
