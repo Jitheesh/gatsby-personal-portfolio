@@ -1042,6 +1042,9 @@ figcaption.port-gird-caption-agileits_w3layouts {
 }
 .filtr-item {
   width: 24.8%;
+  display: inline-block;
+  clear: both;
+  height: 370px;
   border: solid #9bbdd8;
   border-width: 10px 0px 0px 10px;
   transform: scale(1) translate3d(0px, 0px, 0px);
@@ -5056,7 +5059,6 @@ th {
 .img-responsive {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 .thumbnail {
   >img {

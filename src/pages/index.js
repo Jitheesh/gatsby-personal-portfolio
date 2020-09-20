@@ -183,6 +183,7 @@ const IndexPage = ({
                 {Projects}
             </div>
         </div>
+
         <div className="contact-bottom section-w3layouts main-pos" id="contact">
             <h3 className="pos-title">get in touch</h3>
             <h4 className="sec-title">nice to meet you!</h4>
