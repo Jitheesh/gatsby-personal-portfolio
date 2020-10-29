@@ -178,7 +178,7 @@ const IndexPage = ({
         </div>
 
         <div className="portfolio section-w3layouts main-pos" id="port">
-            <h4 className="sec-title">recent works</h4>
+            <h4 className="sec-title">Projects</h4>
             <div className="filtr-container">
                 {Projects}
             </div>
